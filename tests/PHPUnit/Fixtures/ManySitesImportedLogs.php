@@ -35,7 +35,6 @@ class ManySitesImportedLogs extends Fixture
     public function setUp()
     {
         $this->setUpWebsitesAndGoals();
-        self::downloadGeoIpDbs();
 
         LocationProvider::$providers = null;
         GeoIp::$geoIPDatabaseDir = 'tests/lib/geoip-files';
